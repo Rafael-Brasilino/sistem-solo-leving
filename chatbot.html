@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatbot do Sistema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="js/shell-guard.js"></script>
+  <link rel="stylesheet" href="css/flow.css" />
+</head>
+<body>
+  <main class="chat-shell">
+    <section class="chat-card">
+      <div class="chat-head">
+        <div class="chat-title">CHATBOT DO SISTEMA</div>
+        <div class="chat-sub">Assistente de desenvolvimento pessoal</div>
+      </div>
+
+      <div id="chatQuick" class="chat-quick">
+        <button type="button" data-q="status">Status</button>
+        <button type="button" data-q="missao">Missao diaria</button>
+        <button type="button" data-q="progresso">Meu progresso</button>
+        <button type="button" data-q="como evoluir">Como evoluir</button>
+        <button type="button" data-q="gerar plano">Gerar plano</button>
+        <button type="button" data-q="ativar coach">Ativar coach</button>
+        <button type="button" data-q="ir painel">Ir ao painel</button>
+      </div>
+
+      <div id="chatMessages" class="chat-messages"></div>
+
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" type="text" placeholder="Digite sua mensagem..." autocomplete="off" />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <script src="js/sfx.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
+
+
+
+
+

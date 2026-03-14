@@ -10,11 +10,7 @@
   <script src="js/shell-guard.js"></script>
   <link rel="stylesheet" href="css/flow.css" />
 </head>
-<body class="hub-body">
-  <section class="page-switch" aria-label="Navegacao por setas">
-    <button class="page-arrow page-arrow-prev" type="button" data-target="profile.html" data-direction="left" aria-label="Ir para perfil"><</button>
-    <button class="page-arrow page-arrow-next" type="button" data-target="profile.html" data-direction="right" aria-label="Ir para perfil">></button>
-  </section>
+<body class="hub-body" data-nav-prev="profile.html" data-nav-next="profile.html">
 
   <main class="hub-shell">
     <section class="hud-card status-card">
@@ -36,35 +32,35 @@
 
       <div class="bars-row">
         <div class="bar-box hp-box">
-          <span class="bar-tag">HP</span>
+          <span class="bar-tag"><img class="bar-icon" src="icons/cruz.png" alt="" />HP</span>
           <div class="line"><i id="hpLine"></i></div>
           <small id="hpText">0</small>
         </div>
         <div class="bar-box mp-box">
-          <span class="bar-tag">MP</span>
+          <span class="bar-tag"><img class="bar-icon" src="icons/pocao.png" alt="" />MP</span>
           <div class="line"><i id="mpLine"></i></div>
           <small id="mpText">0</small>
         </div>
         <div class="bar-box fatigue-box">
           <span class="bar-tag">FATIGUE</span>
-          <div class="line"><i id="fatigueLine"></i></div>
-          <small id="fatigueText">0</small>
+          <div id="fatigueCircle" class="fatigue-circle"><span id="fatigueText" class="fatigue-value">0</span></div>
         </div>
       </div>
 
       <div class="stats-grid">
-        <div class="status-item stat-for">FOR: <span id="stForca">0</span> <button class="stat-up" data-stat="forca">+</button></div>
-        <div class="status-item stat-vit">VIT: <span id="stVitalidade">0</span> <button class="stat-up" data-stat="vitalidade">+</button></div>
-        <div class="status-item stat-agi">AGI: <span id="stAgilidade">0</span> <button class="stat-up" data-stat="agilidade">+</button></div>
-        <div class="status-item stat-int">INT: <span id="stInteligencia">0</span> <button class="stat-up" data-stat="inteligencia">+</button></div>
-        <div class="status-item stat-per">PER: <span id="stPersistencia">0</span> <button class="stat-up" data-stat="persistencia">+</button></div>
-        <div class="status-item points-box">Ability Points: <span id="abilityPoints">0</span></div>
+        <div class="status-item stat-for"><img class="stat-icon" src="icons/barra.png" alt="" />FOR: <span id="stForca">0</span> <button class="stat-up" data-stat="forca">+</button></div>
+        <div class="status-item stat-vit"><img class="stat-icon" src="icons/coracao.png" alt="" />VIT: <span id="stVitalidade">0</span> <button class="stat-up" data-stat="vitalidade">+</button></div>
+        <div class="status-item stat-agi"><img class="stat-icon" src="icons/corrida.png" alt="" />AGI: <span id="stAgilidade">0</span> <button class="stat-up" data-stat="agilidade">+</button></div>
+        <div class="status-item stat-int"><img class="stat-icon" src="icons/cerebro.png" alt="" />INT: <span id="stInteligencia">0</span> <button class="stat-up" data-stat="inteligencia">+</button></div>
+        <div class="status-item stat-per"><img class="stat-icon" src="icons/percepcao.png" alt="" />PER: <span id="stPersistencia">0</span> <button class="stat-up" data-stat="persistencia">+</button></div>
+        <div class="status-item points-box"> Available Ability Points: <span id="abilityPoints">0</span>
+        </div>
       </div>
     </section>
 
     <section class="hud-card quest-card">
       <div class="quest-head">
-        <div class="quest-icon">!</div>
+        <div class="quest-icon"></div>
         <div class="hud-title">QUEST INFO</div>
       </div>
 
@@ -75,7 +71,7 @@
 
       <div class="quest-meta">
         <div><strong>Reset em:</strong> <span id="resetTimer">00:00:00</span></div>
-        <div><strong>Punicoes:</strong> <span id="punishCount">0</span></div>
+        <div><strong>Punições:</strong> <span id="punishCount">0</span></div>
       </div>
 
       <p class="warning-text">
@@ -103,7 +99,3 @@
   <script src="js/next-step.js"></script>
 </body>
 </html>
-
-
-
-

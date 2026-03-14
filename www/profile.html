@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil do Jogador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet" />
+  <script src="js/shell-guard.js"></script>
+  <link rel="stylesheet" href="css/flow.css" />
+</head>
+<body data-nav-prev="next-step.html" data-nav-next="next-step.html">
+
+  <main class="panel">
+    <h1>Identidade do Jogador</h1>
+    <p class="muted">Revise os dados do perfil antes de confirmar.</p>
+
+    <section class="profile-card">
+      <div class="profile-grid-overlay"></div>
+
+      <div id="photoWrap" class="photo-frame"></div>
+
+      <div class="profile-info">
+        <div class="info-line">
+          <span class="info-label">Nome</span>
+          <div class="name-edit-wrap">
+            <span id="pName" class="info-value"></span>
+            <button id="editNameBtn" class="name-edit-btn" type="button" aria-label="Editar nome" title="Editar nome">&#9998;</button>
+          </div>
+        </div>
+        <div id="nameEditor" class="name-editor hidden">
+          <input id="nameInput" type="text" maxlength="24" />
+          <button id="saveNameBtn" type="button">Salvar</button>
+          <button id="cancelNameBtn" type="button">Cancelar</button>
+        </div>
+        <div class="info-line">
+          <span class="info-label">Idade</span>
+          <span id="pAge" class="info-value"></span>
+        </div>
+        <div class="info-line">
+          <span class="info-label">Sexo</span>
+          <span id="pSex" class="info-value"></span>
+        </div>
+        <div class="info-line">
+          <span class="info-label">Classe</span>
+          <span id="pClass" class="info-value class-highlight"></span>
+        </div>
+        <div class="info-line">
+          <span class="info-label">Status</span>
+          <span class="info-value">Ativo</span>
+        </div>
+
+        <div class="stats">
+          <div class="stat">Forca <span id="sForca"></span></div>
+          <div class="stat">Vitalidade <span id="sVitalidade"></span></div>
+          <div class="stat">Inteligencia <span id="sInteligencia"></span></div>
+          <div class="stat">Agilidade <span id="sAgilidade"></span></div>
+          <div class="stat">Persistencia <span id="sPersistencia"></span></div>
+          <div class="stat">Rank <span id="sRank"></span></div>
+          <div class="stat">EXP <span id="sExp"></span></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/sfx.js"></script>
+  <script src="js/page-switch.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
+
+
+
+

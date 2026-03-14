@@ -1,4 +1,4 @@
-const CACHE_NAME = "solo-leveling-cache-v3";
+const CACHE_NAME = "solo-leveling-cache-v23";
 const ASSETS = [
   "./",
   "./index.html",
@@ -25,6 +25,13 @@ const ASSETS = [
   "./assets/audio/rankup-special.mp3",
   "./assets/audio/penalty-hit.mp3",
   "./assets/video/site-bg.mp4",
+  "./icons/barra.png",
+  "./icons/cerebro.png",
+  "./icons/coracao.png",
+  "./icons/corrida.png",
+  "./icons/cruz.png",
+  "./icons/pocao.png",
+  "./icons/percepcao.png",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
 ];

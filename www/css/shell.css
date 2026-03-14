@@ -1,0 +1,56 @@
+:root {
+  --bg-1: #020811;
+  --bg-2: #071a33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: "Rajdhani", Arial, sans-serif;
+  background: #010912;
+}
+
+.shell-video {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  filter: saturate(1.08) contrast(1.06) brightness(0.62);
+}
+
+.shell-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(94, 209, 255, 0.18), transparent 40%),
+    radial-gradient(circle at 82% 72%, rgba(71, 175, 255, 0.14), transparent 42%),
+    linear-gradient(rgba(1, 10, 24, 0.54), rgba(1, 10, 24, 0.66));
+  filter: blur(1.5px);
+}
+
+.shell-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shell-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+}

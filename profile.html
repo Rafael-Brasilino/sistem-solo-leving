@@ -10,11 +10,7 @@
   <script src="js/shell-guard.js"></script>
   <link rel="stylesheet" href="css/flow.css" />
 </head>
-<body>
-  <section class="page-switch" aria-label="Navegacao por setas">
-    <button class="page-arrow page-arrow-prev" type="button" data-target="next-step.html" data-direction="left" aria-label="Voltar para status"><</button>
-    <button class="page-arrow page-arrow-next" type="button" data-target="next-step.html" data-direction="right" aria-label="Ir para status">></button>
-  </section>
+<body data-nav-prev="next-step.html" data-nav-next="next-step.html">
 
   <main class="panel">
     <h1>Identidade do Jogador</h1>
@@ -65,9 +61,6 @@
           <div class="stat">EXP <span id="sExp"></span></div>
         </div>
 
-        <div class="confirm-wrap">
-          <button id="confirmBtn" type="button">Confirmar</button>
-        </div>
       </div>
     </section>
   </main>

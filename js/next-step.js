@@ -151,7 +151,11 @@ function setBar(lineId, textId, value, max) {
   const text = document.getElementById(textId);
   const ratio = clamp(max > 0 ? value / max : 0, 0, 1);
   if (line) line.style.width = `${Math.round(ratio * 100)}%`;
-  if (text) text.textContent = `${value}/${max}`;
+  const circle = document.getElementById(lineId.replace("Line", "Circle"));
+  if (circle) circle.style.setProperty("--progress", ratio.toString());
+  if (text) {
+    text.textContent = textId === "fatigueText" ? `${value}%` : `${value}/${max}`;
+  }
 }
 
 function renderStatus(profile) {

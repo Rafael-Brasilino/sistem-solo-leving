@@ -1,0 +1,29 @@
+{
+  "name": "sistema-solo-leving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service-worker.js",
+  "scripts": {
+    "copy:web": "node scripts/copy-web.js",
+    "sync:android": "npm run copy:web && npx cap sync android",
+    "open:android": "npx cap open android",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael-Brasilino/sistem-solo-leving.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rafael-Brasilino/sistem-solo-leving/issues"
+  },
+  "homepage": "https://github.com/Rafael-Brasilino/sistem-solo-leving#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.2.0",
+    "@capacitor/cli": "^8.2.0",
+    "@capacitor/core": "^8.2.0"
+  }
+}

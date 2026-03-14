@@ -541,8 +541,8 @@ button:hover {
 }
 
 .bar-icon {
-  width: 26px;
-  height: 26px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   filter: hue-rotate(var(--stat-icon-hue))
     saturate(var(--stat-icon-sat))
@@ -632,8 +632,8 @@ button:hover {
 
 .status-item .stat-icon {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
   object-fit: contain;
   filter: drop-shadow(0 0 6px rgba(100, 220, 255, 0.5));
@@ -676,7 +676,7 @@ button:hover {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 0px 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   align-items: center;
 }
@@ -688,6 +688,7 @@ button:hover {
   place-items: center;
   font-family: "Orbitron", Arial, sans-serif;
   font-size: 34px;
+  display: none;
 }
 
 .quest-sub {
